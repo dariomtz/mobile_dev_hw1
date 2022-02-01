@@ -6,25 +6,29 @@ class SchoolBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-            child: Padding(
-                padding: const EdgeInsets.all(10),
-                child: Column(
-                  children: const [
-                    Text(
-                      "El ITESO, Universidad Jesuita de Guadalajara",
-                      style: TextStyle(fontWeight: FontWeight.bold),
-                    ),
-                    Text(
-                      "San Pedro Tlaquepaque, Jal.",
-                      style: TextStyle(fontWeight: FontWeight.w200),
-                    ),
-                  ],
-                ))),
-        const Likes()
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(15),
+      child: Row(
+        children: [
+          Expanded(
+              child: Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: const [
+                      Text(
+                        "El ITESO, Universidad Jesuita de Guadalajara",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        "San Pedro Tlaquepaque, Jal.",
+                        style: TextStyle(fontWeight: FontWeight.w200),
+                      ),
+                    ],
+                  ))),
+          const Likes()
+        ],
+      ),
     );
   }
 }
